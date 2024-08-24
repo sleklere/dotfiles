@@ -20,7 +20,7 @@
 
     // Load Modules
     "include": [
-        "~/.config/ml4w/settings/waybar-quicklinks.json",
+        "~/.config/waybar/quicklinks.json",
         "~/.config/waybar/modules.json"
     ],
 
@@ -52,7 +52,6 @@
         "group/tools",
         "tray",
         "custom/exit",
-        //"custom/ml4w-welcome",
         "clock"
     ]
 }

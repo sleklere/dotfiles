@@ -53,14 +53,6 @@
     "separate-outputs": true
   },
 
-  // ML4W Welcome App
-  "custom/ml4w-welcome": {
-    "on-click": "ags -t sidebar",
-    "on-click-right": "sleep 0.1 && ~/.config/ml4w/apps/ML4W_Welcome-x86_64.AppImage",
-    "format": " ",
-    "tooltip-format": "Open Sidebar"
-  },
-
   // Empty
   "custom/empty": {
     "format": ""
@@ -75,9 +67,9 @@
   // Cliphist
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh",
-    "on-click-right": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && ~/.config/ml4w/scripts/cliphist.sh w",
+    "on-click": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/hypr/scripts/cliphist.sh w",
     "tooltip-format": "Clipboard Manager"
   },
 
@@ -86,10 +78,10 @@
     "format": "  {}",
     "escape": true,
     "return-type": "json",
-    "exec": "~/.config/ml4w/scripts/updates.sh",
+    "exec": "~/.config/waybar/scripts/updates.sh",
     "restart-interval": 60,
-    "on-click": "$(cat ~/.config/ml4w/settings/terminal.sh) --class dotfiles-floating -e ~/.config/ml4w/scripts/installupdates.sh",
-    "on-click-right": "~/.config/ml4w/settings/software.sh"
+    "on-click": "alacritty --class dotfiles-floating -e ~/.config/waybar/scripts/install_updates.sh",
+    "on-click-right": "alacritty -e pacseek"
   },
 
   // Wallpaper
@@ -108,11 +100,11 @@
   },
 
   // Settings
-  "custom/settings": {
+  /*"custom/settings": {
     "format": "",
     "on-click": "~/.config/ml4w/apps/ML4W_Dotfiles_Settings-x86_64.AppImage",
     "tooltip-format": "ML4W Dotfiles Settings"
-  },
+  },*/
 
   // Keybindings
   "custom/keybindings": {
@@ -121,25 +113,11 @@
     "tooltip": false
   },
 
-  // ChatGPT Launcher
-  "custom/chatgpt": {
-    "format": " ",
-    "on-click": "~/.config/ml4w/settings/ai.sh",
-    "tooltip-format": "AI Support"
-  },
-
   // Calculator
   "custom/calculator": {
     "format": "",
     "on-click": "qalculate-gtk",
     "tooltip-format": "Open calculator"
-  },
-
-  // Windows VM
-  "custom/windowsvm": {
-    "format": "",
-    "on-click": "~/.config/ml4w/scripts/launchvm.sh",
-    "tooltip": false
   },
 
   // Rofi Application Launcher
@@ -223,13 +201,13 @@
   // CPU
   "cpu": {
     "format": "/ C {usage}% ",
-    "on-click": "~/.config/ml4w/settings/systeminfo.sh"
+    "on-click": "missioncenter"
   },
 
   // Memory
   "memory": {
     "format": "/ M {}% ",
-    "on-click": "~/.config/ml4w/settings/systeminfo.sh"
+    "on-click": "missioncenter"
   },
 
   // Harddisc space used
@@ -237,7 +215,7 @@
     "interval": 30,
     "format": "D {percentage_used}% ",
     "path": "/",
-    "on-click": "~/.config/ml4w/settings/systeminfo.sh"
+    "on-click": "missioncenter"
   },
 
   "hyprland/language": {
@@ -306,8 +284,7 @@
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "$(cat ~/.config/ml4w/settings/terminal.sh) --class dotfiles-floating -e nmtui",
-    "on-click-right": "~/.config/ml4w/settings/networkmanager.sh"
+    "on-click": "nm-connection-editor",
   },
 
   // Battery
