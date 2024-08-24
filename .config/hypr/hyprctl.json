@@ -1,0 +1,26 @@
+[
+    {
+        "key": "general:gaps_in",
+        "value": 4
+    },
+    {
+        "key": "general:gaps_out",
+        "value": 8
+    },
+    {
+        "key": "decoration:rounding",
+        "value": 2
+    },
+    {
+        "key": "decoration:inactive_opacity",
+        "value": 0.8
+    },
+    {
+        "key": "animations:enabled",
+        "value": true
+    },
+    {
+        "key": "general:border_size",
+        "value": 1
+    }
+]
