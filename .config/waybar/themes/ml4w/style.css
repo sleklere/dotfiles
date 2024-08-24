@@ -19,7 +19,8 @@
  * ----------------------------------------------------- */
 
 * {
-    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "FiraCode Nerd Font", "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 500;
     border: none;
     border-radius: 0px;
 }
@@ -191,7 +192,7 @@ window#waybar.empty #window {
 #custom-quicklink10,
 #custom-waybarthemes {
     margin-right: 16px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     opacity: 0.8;
     color: @iconcolor;
@@ -415,11 +416,11 @@ window#waybar.empty #window {
     opacity:0.8;
 }
 
-#bluetooth.off {
+/*#bluetooth.off {
     background-color: transparent;
     padding: 0px;
     margin: 0px;
-}
+}*/
 
 /* -----------------------------------------------------
  * Battery

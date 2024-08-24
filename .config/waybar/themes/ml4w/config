@@ -44,15 +44,15 @@
     "modules-right": [
         "custom/updates",
         "pulseaudio",
-        "backlight",
+        //"backlight",
         "bluetooth",
-        "battery",
+        //"battery",
         "network",
         "group/hardware",
         "group/tools",
         "tray",
         "custom/exit",
-        "custom/ml4w-welcome",
+        //"custom/ml4w-welcome",
         "clock"
     ]
 }
