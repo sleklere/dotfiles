@@ -32,12 +32,12 @@
         "wlr/taskbar",
         "group/quicklinks",
         //"hyprland/window",
-        "custom/empty"
+        "custom/empty",
+        "hyprland/workspaces"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/workspaces"
     ],
 
     // Modules Right

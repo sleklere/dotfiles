@@ -6,8 +6,8 @@
     },
     "custom/quicklink2": {
         "format": "",
-        "on-click": "brave",
-        "tooltip-format": "Open Brave"
+        "on-click": "firefox",
+        "tooltip-format": "Open Firefox"
     },
     "custom/quicklink3": {
         "format": "",
