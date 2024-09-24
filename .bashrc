@@ -1,9 +1,9 @@
-#    _               _              
-#   | |__   __ _ ___| |__  _ __ ___ 
+#    _               _
+#   | |__   __ _ ___| |__  _ __ ___
 #   | '_ \ / _` / __| '_ \| '__/ __|
-#  _| |_) | (_| \__ \ | | | | | (__ 
+#  _| |_) | (_| \__ \ | | | | | (__
 # (_)_.__/ \__,_|___/_| |_|_|  \___|
-# 
+#
 # -----------------------------------------------------
 # You can add your custom configuration by creating a file ~/.bashrc_custom
 # -----------------------------------------------------
@@ -99,14 +99,14 @@ cat ~/.cache/wal/sequences
 # -----------------------------------------------------
 # Fastfetch if on wm
 # -----------------------------------------------------
-if [[ $(tty) == *"pts"* ]]; then
-    fastfetch --config examples/13
-else
-    echo
-    if [ -f /bin/qtile ]; then
-        echo "Start Qtile X11 with command Qtile"
-    fi
-    if [ -f /bin/hyprctl ]; then
-        echo "Start Hyprland with command Hyprland"
-    fi
-fi
+#if [[ $(tty) == *"pts"* ]]; then
+#    fastfetch --config examples/13
+#else
+#    echo
+#    if [ -f /bin/qtile ]; then
+#        echo "Start Qtile X11 with command Qtile"
+#    fi
+#    if [ -f /bin/hyprctl ]; then
+#        echo "Start Hyprland with command Hyprland"
+#    fi
+#fi

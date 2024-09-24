@@ -26,12 +26,13 @@
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0.6);
+    /*background-color: rgba(0,0,0,0.6);*/
+    background-color: @backgrounddark;
     border-bottom: 0px solid #ffffff;
     /* color: #FFFFFF; */
     /*background: transparent;*/
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 
 /* -----------------------------------------------------
@@ -52,7 +53,7 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0px 8px;
+    padding: 0px 4px;
     /*margin: 4px 3px;*/
     border-radius: 0px;
     border: 0px;
@@ -92,9 +93,9 @@ window#waybar {
  * ----------------------------------------------------- */
 
 tooltip {
-    border-radius: 5px;
-    background-color: @backgroundlight;
-    opacity:0.8;
+    /*border-radius: 5px;*/
+    background-color: @backgrounddark;
+    opacity:0.95;
     padding:20px;
     margin:0px;
 }
@@ -194,7 +195,7 @@ window#waybar.empty #window {
 #custom-quicklink10,
 #custom-waybarthemes {
     margin-right: 16px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     opacity: 0.8;
     color: @iconcolor;
@@ -271,7 +272,7 @@ window#waybar.empty #window {
 #custom-appmenu {
     background-color: @backgrounddark;
     font-size: 14px;
-    color: @textcolor1;
+    color: @textcolor2;
     /*border-radius: 0px 0px 5px 0px;*/
     padding: 0px 20px 0px 20px;
     margin: 0px 17px 0px 0px;
@@ -285,7 +286,7 @@ window#waybar.empty #window {
 #custom-exit {
     margin: 0px 13px 0px 0px;
     padding:0px;
-    font-size:20px;
+    font-size:16px;
     color: @iconcolor;
     opacity: 0.8;
 }
@@ -295,17 +296,18 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-updates {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     font-size: 14px;
     color: @textcolor2;
     /*border-radius: 0px 0px 0px 5px;*/
     padding: 2px 10px 0px 10px;
     margin: 0px 5px 0px 0px;
     opacity:0.8;
+    /*text-shadow: -1px 0px 2px rgba(0, 0, 0, 1);*/
 }
 
 #custom-updates.green {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
 }
 
 #custom-updates.yellow {
@@ -340,7 +342,7 @@ window#waybar.empty #window {
 #clock {
     background-color: @backgrounddark;
     font-size: 14px;
-    color: @textcolor1;
+    color: @textcolor2;
     /*border-radius: 0px 0px 0px 5px;*/
     padding: 1px 10px 0px 10px;
     margin: 0px 0px 0px 5px;
@@ -366,7 +368,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     font-size: 14px;
     color: @textcolor2;
     border-radius: 0px;
@@ -385,7 +387,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #network {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     font-size: 14px;
     color: @textcolor2;
     /*border-radius: 0px 0px 5px 0px;*/
@@ -395,12 +397,12 @@ window#waybar.empty #window {
 }
 
 #network.ethernet {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     color: @textcolor2;
 }
 
 #network.wifi {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     color: @textcolor2;
 }
 
@@ -409,7 +411,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #bluetooth, #bluetooth.on, #bluetooth.connected, #bluetooth.off {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     font-size: 14px;
     color: @textcolor2;
     border-radius: 0px;
@@ -429,7 +431,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #battery {
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
     font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
@@ -440,7 +442,7 @@ window#waybar.empty #window {
 
 #battery.charging, #battery.plugged {
     color: @textcolor2;
-    background-color: @backgroundlight;
+    background-color: @backgroundlightest;
 }
 
 @keyframes blink {

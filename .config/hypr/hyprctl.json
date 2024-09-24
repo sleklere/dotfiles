@@ -9,7 +9,7 @@
     },
     {
         "key": "decoration:rounding",
-        "value": 2
+        "value": 0
     },
     {
         "key": "decoration:inactive_opacity",
@@ -21,6 +21,6 @@
     },
     {
         "key": "general:border_size",
-        "value": 1
+        "value": 2
     }
 ]

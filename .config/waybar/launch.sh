@@ -25,7 +25,7 @@ sleep 0.5
 # -----------------------------------------------------
 # Default theme: /THEMEFOLDER;/VARIATION
 # -----------------------------------------------------
-themestyle="/ml4w;/ml4w/mixed"
+#themestyle="/ml4w;/ml4w/mixed"
 
 # -----------------------------------------------------
 # Get current theme information from ~/.config/ml4w/settings/waybar-theme.sh
@@ -37,25 +37,25 @@ themestyle="/ml4w;/ml4w/mixed"
 #    echo "$themestyle" > ~/.config/ml4w/settings/waybar-theme.sh
 #fi
 
-IFS=';' read -ra arrThemes <<< "$themestyle"
-echo ":: Theme: ${arrThemes[0]}"
-
-if [ ! -f ~/.config/waybar/themes${arrThemes[1]}/style.css ]; then
-    themestyle="/ml4w;/ml4w/light"
-fi
+#IFS=';' read -ra arrThemes <<< "$themestyle"
+#echo ":: Theme: ${arrThemes[0]}"
+#
+#if [ ! -f ~/.config/waybar/themes${arrThemes[1]}/style.css ]; then
+#    themestyle="/ml4w;/ml4w/light"
+#fi
 
 # -----------------------------------------------------
 # Loading the configuration
 # -----------------------------------------------------
-config_file="config"
-style_file="style.css"
+#config_file="config"
+#style_file="style.css"
 
 # Standard files can be overwritten with an existing config-custom or style-custom.css
-if [ -f ~/.config/waybar/themes${arrThemes[0]}/config-custom ] ;then
-    config_file="config-custom"
-fi
-if [ -f ~/.config/waybar/themes${arrThemes[1]}/style-custom.css ] ;then
-    style_file="style-custom.css"
-fi
+#if [ -f ~/.config/waybar/themes${arrThemes[0]}/config-custom ] ;then
+#    config_file="config-custom"
+#fi
+#if [ -f ~/.config/waybar/themes${arrThemes[1]}/style-custom.css ] ;then
+#    style_file="style-custom.css"
+#fi
 
-waybar -c ~/.config/waybar/themes${arrThemes[0]}/$config_file -s ~/.config/waybar/themes${arrThemes[1]}/$style_file &
+waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/mixed/style.css &
