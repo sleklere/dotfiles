@@ -5,7 +5,7 @@
     },
     {
         "key": "general:gaps_out",
-        "value": 4
+        "value": 0
     },
     {
         "key": "decoration:rounding",
@@ -13,7 +13,7 @@
     },
     {
         "key": "decoration:inactive_opacity",
-        "value": 0.8
+        "value": 0.95
     },
     {
         "key": "animations:enabled",

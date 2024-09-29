@@ -5,7 +5,6 @@
 #  ___) | || (_| | |  | |_    \ V  V / (_| | |_| | |_) | (_| | |
 # |____/ \__\__,_|_|   \__|    \_/\_/ \__,_|\__, |_.__/ \__,_|_|
 #                                           |___/
-# by Stephan Raabe (2023)
 # -----------------------------------------------------
 
 # Check if waybar-disabled file exists
@@ -22,6 +21,7 @@ killall waybar
 pkill waybar
 sleep 0.5
 
+waybar -c $HOME/.config/waybar/config -s $HOME/.config/waybar/themes/main.css &
 # -----------------------------------------------------
 # Default theme: /THEMEFOLDER;/VARIATION
 # -----------------------------------------------------
@@ -58,4 +58,3 @@ sleep 0.5
 #    style_file="style-custom.css"
 #fi
 
-waybar -c ~/.config/waybar/themes/ml4w/config -s ~/.config/waybar/themes/ml4w/mixed/style.css &
