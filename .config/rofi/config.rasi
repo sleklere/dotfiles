@@ -3,7 +3,6 @@
 @import "~/.cache/wal/colors-rofi-pywal"
 
 /* ---- Load wallpaper ---- */
-@import "~/.config/ml4w/cache/current_wallpaper.rasi"
 
 * {
     font: "Fira Sans 11";
