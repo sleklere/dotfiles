@@ -7,7 +7,7 @@ style = "Regular"
 family = "MesloLGS NF" # for oh my zsh + powerlevel10k
 
 [window]
-opacity = 0.9
+opacity = 0.95
 
 [window.padding]
 x = 15
@@ -16,7 +16,7 @@ y = 15
 [selection]
 save_to_clipboard = true
 
-[shell]
+[terminal.shell]
 program = "/usr/bin/zsh"
 
 #[colors.primary]
@@ -62,3 +62,5 @@ white = '#e0def4'
 [colors.hints]
 start = {foreground = '#908caa', background = '#1f1d2e' }
 end = { foreground = '#6e6a86', background = '#1f1d2e' }
+
+[terminal]

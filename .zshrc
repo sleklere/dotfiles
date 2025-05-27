@@ -118,5 +118,7 @@ source $ZSH/oh-my-zsh.sh
 alias v='$EDITOR'
 alias vim='$EDITOR'
 
+alias ws='/home/sleklere/ws.sh'
+
 # PYWAL
 #cat ~/.cache/wal/sequences

@@ -112,7 +112,7 @@ tooltip label {
 
 #window {
     background: @backgroundlight;
-    margin: 5px 15px 5px 0px;
+    margin: 0px 15px 0px 0px;
     padding: 2px 10px 0px 10px;
     border-radius: 5px;
     color:@textcolor2;
@@ -197,7 +197,7 @@ window#waybar.empty #window {
 #custom-quicklink10,
 #custom-waybarthemes {
     margin: 0px 8px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     opacity: 1.0;
     color: @iconcolor;
@@ -289,7 +289,7 @@ window#waybar.empty #window {
 
 #custom-updates {
     background-color: @backgroundlightest;
-    font-size: 15px;
+    font-size: 14px;
     color: @textcolor2;
     /*border-radius: 0px 0px 0px 5px;*/
     padding: 2px 10px 0px 10px;
@@ -319,7 +319,7 @@ window#waybar.empty #window {
 #disk,#memory,#cpu,#language {
     margin:0px;
     padding:0px;
-    font-size:15px;
+    font-size:14px;
     color:@iconcolor;
 }
 
@@ -338,8 +338,8 @@ window#waybar.empty #window {
     /*border-radius: 0px 0px 0px 5px;*/
     padding: 1px 10px 0px 10px;
     margin: 0px 0px 0px 5px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     opacity:1.0;
 }
 
@@ -363,7 +363,7 @@ window#waybar.empty #window {
 
 #pulseaudio {
     background-color: @backgroundlightest;
-    font-size: 15px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 0px;
     padding: 2px 10px 0px 10px;
@@ -382,7 +382,7 @@ window#waybar.empty #window {
 
 #network {
     background-color: @backgroundlightest;
-    font-size: 15px;
+    font-size: 14px;
     color: @textcolor2;
     /*border-radius: 0px 0px 5px 0px;*/
     padding: 2px 10px 0px 10px;
@@ -406,7 +406,7 @@ window#waybar.empty #window {
 
 #bluetooth, #bluetooth.on, #bluetooth.connected, #bluetooth.off {
     background-color: @backgroundlightest;
-    font-size: 15px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 0px;
     padding: 2px 10px 0px 10px;
@@ -426,7 +426,7 @@ window#waybar.empty #window {
 
 #battery {
     background-color: @backgroundlightest;
-    font-size: 15px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 15px 0px 10px;
