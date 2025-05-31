@@ -9,11 +9,15 @@
     },
     {
         "key": "decoration:rounding",
-        "value": 0
+        "value": 2
     },
     {
         "key": "decoration:inactive_opacity",
-        "value": 0.95
+        "value": 0.9
+    },
+    {
+        "key": "decoration:active_opacity",
+        "value": 1.0
     },
     {
         "key": "animations:enabled",
