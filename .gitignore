@@ -1,0 +1,9 @@
+# ignore all .config except some
+.config/*
+!.config/alacritty/
+!.config/dunst/
+!.config/hypr/
+!.config/rofi/
+!.config/waybar/
+!.config/waypaper/
+!.config/wlogout/
