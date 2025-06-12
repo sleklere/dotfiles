@@ -49,14 +49,20 @@ button {
 #network,
 #cpu,
 #memory,
+#custom-disk,
 #custom-lock,
+#custom-hypridle,
 #custom-power,
 #custom-weather,
 #custom-uptime,
 #custom-docker {
   background-color: #101010;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   margin: 5px 0;
+}
+
+#custom-hypridle.active {
+  color: #ea999c;
 }
 
 #clock {

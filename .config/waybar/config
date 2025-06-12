@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
 
-  "modules-center": ["clock", "custom/weather"],
+  "modules-center": ["clock"],
 
   "modules-right": [
     "pulseaudio",
@@ -14,9 +14,11 @@
     "network",
     "cpu",
     "memory",
+    "custom/disk",
     //"custom/docker",
     "tray",
     //"custom/lock",
+    "custom/hypridle",
     "custom/power"
   ],
 
@@ -26,12 +28,16 @@
     "format-icons": {
       "active": "",
       "default": ""
-    }
+    },
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": false,
   },
 
   "tray": {
     "icon-size": 16,
-    "spacing": 10
+    "spacing": 5
   },
 
   "custom/music": {
@@ -117,5 +123,25 @@
     "interval": 1800,
     "exec": "$(pwd)/scripts/weather-stats/weather-stats",
     "return-type": "json"
-  }
+  },
+
+  "custom/disk": {
+      "format": "  {}",
+      "interval": 30,
+      "tooltip": false,
+      "exec": "~/.config/waybar/scripts/disk-usage.sh"
+  },
+
+  "custom/hypridle": {
+    "format": "",
+    "return-type": "json",
+    "escape": true,
+    "exec-on-event": true,
+    "interval": 60,
+    "exec": "~/.config/hypr/scripts/hypridle.sh status",
+    "on-click": "~/.config/hypr/scripts/hypridle.sh toggle",
+    "on-click-right": "hyprlock"
+  },
+
+
 }
